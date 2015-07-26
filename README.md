@@ -11,3 +11,4 @@ This is a repository for the course project in the Getting and Cleaning Data Cou
 
 * `run_analysis.R` - Contains code to perform steps 1 to 5. This can be launched in Rstudio
 * `average_data.txt` - Output created in the 5th step
+* `CodeBook.md` - Decribes the variales the data and some workings
