@@ -1,22 +1,11 @@
----
-title: "CodeBook.rm"
-author: "Snooz1234"
-date: "Sunday, July 26, 2015"
-output: html_document
----
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+# Variables
+###Naming of Downloaded files
+* `x_train`, `y_train`, `x_test`, `y_test`, `subject_train` and `subject_test`
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r}
-summary(cars)
-```
-
-You can also embed plots, for example:
-
-```{r, echo=FALSE}
-plot(cars)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+###Variables and data created in futher workings
+* `x`, `y` and `subject_data` merge the previous datasets to further analysis.
+* `features` contains the correct names for the `x` dataset, which are applied to the column names stored in `mean_and_std_features`, a numeric vector used to extract the desired data.
+* A similar approach is taken with activity names through the `activities` variable.
+* `all_data` is created by merging  `x`, `y` and `subject_data` into a big dataset.
+* `average_data.txt` is the final clean data file created in step 5 
